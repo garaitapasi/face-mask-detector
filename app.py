@@ -2,6 +2,13 @@ import streamlit as st
 import cv2
 import numpy as np
 from tensorflow.keras.models import load_model
+import os
+
+# 🔽 Download model from Google Drive if not present
+if not os.path.exists("mask_detector.keras"):
+    import gdown
+    url = "https://drive.google.com/uc?id=1WQjSlvYS93qRFBAnabkGz6XDNbHYK5zT"
+    gdown.download(url, "mask_detector.keras", quiet=False)
 
 # Load model
 model = load_model("mask_detector.keras")
