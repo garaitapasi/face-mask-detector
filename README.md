@@ -2,13 +2,12 @@
 
 ## 📌 Description
 
-This project is a **real-time Face Mask Detection System** built using Deep Learning and Computer Vision techniques.
-It detects whether a person is wearing a mask or not using a trained **MobileNetV2 model**.
+This project is a **real-time Face Mask Detection System** built using Deep Learning and Computer Vision. It detects whether a person is wearing a mask or not using a trained **MobileNetV2 model**.
 
 The system supports both:
 
-* 🎥 **Real-time webcam detection**
-* 🌐 **Image-based web application**
+* 🎥 Real-time webcam detection (main feature)
+* 🌐 Image-based prediction using a simple web UI
 
 ---
 
@@ -19,13 +18,14 @@ The system supports both:
 * Real-time face detection using OpenCV
 * Mask / No Mask classification
 * Live bounding boxes and labels
-* 🚨 Audio alert when no mask detected
+* 🔊 Audio alert when no mask is detected
 * 👥 Counts number of people without mask
 
 ### 🌐 Web App Version
 
 * Upload image and get prediction
-* Simple UI using Streamlit
+* Detects faces and predicts mask status
+* Simple UI built using Streamlit
 
 ---
 
@@ -58,31 +58,31 @@ face-mask-detector/
 
 ### 🥇 Webcam Version (Recommended)
 
-1. Install dependencies:
+Install dependencies:
 
 ```
 pip install opencv-python numpy tensorflow
 ```
 
-2. Run:
+Run:
 
 ```
 python webcam.py
 ```
 
-3. Press **q** to exit
+Press **q** to exit
 
 ---
 
 ### 🥈 Web App Version
 
-1. Install dependencies:
+Install dependencies:
 
 ```
 pip install -r requirements.txt
 ```
 
-2. Run:
+Run:
 
 ```
 python -m streamlit run app.py
@@ -92,8 +92,7 @@ python -m streamlit run app.py
 
 ## 🎥 Demo
 
-👉 (Add your demo video link here)
-
+👉 Add your demo video link here
 Example:
 
 ```
@@ -104,31 +103,26 @@ https://drive.google.com/your-demo-link
 
 ## 🎯 Output
 
-* 😷 Mask detected (Green box)
-* ❌ No Mask detected (Red box)
-* 🔊 Alert sound for violations
-* 👥 Live count of people without mask
+* 😷 Mask detected → Green bounding box
+* ❌ No Mask detected → Red bounding box
+* 🔊 Audio alert for violations
+* 👥 Real-time count of people without mask
 
 ---
 
 ## 💡 Future Improvements
 
-* Deploy real-time webcam version on web
-* Improve accuracy with larger dataset
+* Deploy full real-time system on web
+* Improve model accuracy with more data
 * Add face tracking and logging system
 
 ---
 
-## 👨‍💻 Author
-
-Tapasi
-
----
 
 ## 📢 Note
 
-* Webcam version works on **local system only**
-* Web version supports **image-based prediction**
-* Best results when face is clearly visible
+* The webcam version runs locally and requires camera access
+* The Streamlit app is for image-based prediction
+* Best results when faces are clearly visible
 
 ---
