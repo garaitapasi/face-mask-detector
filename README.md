@@ -93,7 +93,10 @@ python -m streamlit run app.py
 ## 🎥 Demo
 
 ```
+Webcam Demo
 https://drive.google.com/file/d/1YDOP65el5W6_7v4vjCR7oGvNf_jzgEti/view?usp=sharing
+Streamlit Demo
+https://drive.google.com/file/d/1_MjNnSWAWZpjYxFOEmasSruoZY7UjzQM/view?usp=sharing
 ```
 
 ---
