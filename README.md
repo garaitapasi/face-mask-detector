@@ -92,11 +92,8 @@ python -m streamlit run app.py
 
 ## 🎥 Demo
 
-👉 Add your demo video link here
-Example:
-
 ```
-https://drive.google.com/your-demo-link
+https://drive.google.com/file/d/1YDOP65el5W6_7v4vjCR7oGvNf_jzgEti/view?usp=sharing
 ```
 
 ---
